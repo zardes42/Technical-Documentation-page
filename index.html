@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documentation Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <div id="block">
+            <header id="navbar">
+            <header class="nav-header"> JS Documentation</header><hr>
+            <ul id="nav-list" >
+                <a id="1"onclick="active(this.id)"href="#Introduction"class="nav-link"><li>Introduction</li></a><hr>
+                <a id="2"onclick="active(this.id)"href="#What_You_Should_Already_Know"class="nav-link"><li>What You Should Already Know</li></a><hr>
+                <a id="3"onclick="active(this.id)"href="#Javascript_and_Java"class="nav-link"><li>Javascript and Java</li></a><hr>
+                <a id="4"onclick="active(this.id)"href="#Hello_World"class="nav-link"><li>Hello world</li></a><hr>
+                <a id="5"onclick="active(this.id)"href="#Declaring_Variables"class="nav-link"><li>Declaring Variables</li></a><hr>
+                <a id="6"onclick="active(this.id)"href="#Function_Declaration"class="nav-link"><li>Function Declaration</li></a> <hr>
+                <a id="7"onclick="active(this.class)"href="#Lorem_Ipsum_Dolor"class="nav-link"><li>Lorem Ipsum Dolor</li></a><hr>
+                <a id="8"onclick="active(this.class)"href="#Reference"class="nav-link"><li>Reference</li></a>
+            </ul>
+            </header>
+            </div>
+            <div id="main-doc">
+                <section class="main-section"  id="Introduction">
+                    <header class="header">Introduction</header>
+                    <p>JavaScript is a cross-platform, object-oriented scripting language. 
+                        It is a small and lightweight language. Inside a host environment (for example, a web browser), 
+                        JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+                        <p>JavaScript contains a standard library of objects, 
+                            such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements.
+                             Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+                </section>
+                
+                <section class="main-section"  id="What_You_Should_Already_Know">
+                    <header class="header">What You Should Already Know</header>
+                    <p>This guide assumes you have the following basic background:</p>
+                    <ul>
+                        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                        <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>   
+                    </ul>
+                </section>
+                
+                <section class="main-section"  id="Javascript_and_Java">
+                    <header class="header">Javascript and Java</header>
+                    <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+                    <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+                    <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+                </section>
+                
+                <section class="main-section"  id="Hello_World">
+                    <header class="header">Hello World</header>
+                    <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+                    <code>function greetMe(yourName) { alert("Hello " + yourName); }
+                        greetMe("World");
+                        </code>
+                    <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+                </section>
+
+                <section class="main-section"  id="Declaring_Variables">
+                    <header class="header">Declaring Variables</header>
+                    <p>You can declare a variable in three ways:</p>
+                    <p>With the keyword var. For example,</p>
+                    <code>var x = 42.</code>
+                    <p>This syntax can be used to declare both local and global variables.</p>
+                    <p>By simply assigning it a value. For example,</p>
+                    <code>x = 42.</code>
+                    <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
+                    <p>With the keyword let. For example,</p>
+                    <code>let y = 13.</code>
+                    <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+                </section>
+
+                <section class="main-section"  id="Function_Declaration">
+                    <header class="header">Function Declaration</header>
+                     <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+                     <ul>
+                         <li>The name of the function.</li>
+                         <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+                         <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+                     </ul>
+                     <p>For example, the following code defines a simple function named square:</p>
+                    <code>function square(number) { return number * number; }</code>
+                    <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
+                    <code>return number * number;</code>
+                    <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
+                </section>
+                
+                <section class="main-section"  id="Lorem_Ipsum_Dolor">
+                    <header class="header">Lorem Ipsum Dolor</header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a tortor ipsum. Etiam eros urna, rhoncus a metus ut, vulputate convallis eros. Mauris dictum luctus nibh dictum placerat.</p>
+                    <p>Aliquam et est pretium nibh volutpat sagittis eu sit amet purus. Nulla massa diam, eleifend a tincidunt non, pharetra nec erat. Quisque quis facilisis eros, nec porta dui.   Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris rhoncus placerat tellus, ac vestibulum felis pharetra in. Nullam id elit accumsan, ullamcorper mauris ut, placerat metus. Maecenas suscipit libero rhoncus accumsan vulputate. Morbi id dolor neque.</p>
+                    <code>function dolor_amet() console.log('Hello World')</code>
+                    <p>Etiam nec purus interdum, imperdiet purus ac, lacinia sem. Quisque tempus mattis erat ac hendrerit. Etiam nec ipsum maximus, condimentum ex venenatis, tristique felis.</p>
+                </section>
+                
+                <section class="main-section"  id="Reference">
+                    <header class="header">Reference</header>
+                 <ul>
+                     <li>All the documentation in this page is taken from<a id="foot-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"> MDN</a></li>
+                 </ul>
+                </section>
+           
+           
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+body{
+   
+    scroll-behavior: smooth;
+}
+main{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+    height: 150em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navbar{
+    background-color: white;
+    position: fixed;
+    width: 20%;
+    margin: -20px;
+    height: 100vh;
+    padding: 10px 0px 50px 0px ;
+    z-index: 999;
+    border : 2px solid black ;
+
+}
+.active{
+    width: inherit;
+    height: inherit;
+    background-color: lawngreen;
+
+}
+#main-doc{
+    border: 2px solid ;
+    line-height: 1.3;
+    width: 79%;
+    padding: 30px;
+    margin-top: -8px;
+    margin-bottom: -6px; 
+}
+#nav-list{
+    list-style-type: none;
+    display: inline;
+}
+.nav-header {
+    font-size:30px;
+    text-align: left;
+    padding: 15px;
+    padding-left: 20px;
+}
+.nav-link{
+    text-align: center;
+    padding: 20px;
+}
+a{
+    color: initial;
+    text-decoration: initial;
+    
+}
+li{
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+}
+.main-section{
+    font-size: 14px;
+    color: #4d4e53;
+    background-color: white;
+    margin-left:none;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+.header{
+    font-size:25px;
+    padding:10px;
+}
+p{
+    letter-spacing: 0.2px;
+    padding-left: 30px;
+    line-height: 2.2;
+}
+a > li{
+    padding: unset;
+    padding-left: 35px;
+  
+}
+code{
+    background-color:hsl(230, 4%, 90%);
+    padding: 10px;
+    margin-left: 30px;
+}
+.nav-header1{
+    display: none;
+}
+#foot-link{
+    color: blueviolet;
+}
+@media only screen and (max-width: 900px) {
+    main{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+      font-size: 15px;
+      background-color: red;
+      height: max-content;
+    }
+    
+    #block{
+        width: 100vw;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar{
+        position: relative;
+        overflow-y: scroll;
+        height: 250px;
+        background-color: white;
+        width: 70%;
+        z-index: 999;
+        border : 2px solid black ;
+    }
+    #main-doc{
+        width: 95%;
+        display: grid;
+        padding: 0px;
+        margin:0px
+
+    }
+     code{
+        display: flow-root;
+    }
+}
